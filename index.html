@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.1.3/cerulean/bootstrap.min.css">
+    <title>Weather App</title>
+</head>
+<body>
+    
+    <div class="container text-light p-5 text-center">
+        <div class="card bg-primary">
+            <div class="card-body">
+                <h1 class="w-location"></h1>
+                <h6 class="w-date"></h6>
+                <h3 class="w-desc my-5"></h3>
+                <div class="row">
+                    <div class="col-md-6">
+                        <h1 class="w-temp"></h1>
+                        <img class="icon img-fluid" height="100" width="100">
+                    </div>
+                    <div class="col-md-6">
+                        <p class="lead font-weight-bold">Humidity : <span class="w-humidity"></span></p>
+                        <p class="lead font-weight-bold">Wind : <span class="w-wind"></span></p>
+                        <p class="lead font-weight-bold">Pressure : <span class="w-pressure"></span></p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+    <script src="httpErrors.js"></script>
+    <script src="weather.js"></script>
+    <script src="ui.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
