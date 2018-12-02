@@ -7,7 +7,7 @@ class Weather{
     async getWeather(city, code){
         this.city = city;
         this.country_code = code;
-        let response = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${this.city},${this.country_code}&APPID=${this.app_id}&units=metric`);
+        let response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${this.city},${this.country_code}&APPID=${this.app_id}&units=metric`);
 
         //checking for http errors
         try{
