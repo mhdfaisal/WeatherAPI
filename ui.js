@@ -29,6 +29,6 @@ class UI{
         
         //Adding Weather icon to the UI
         let iconId = weather.weather[0].icon;
-        this.icon.setAttribute('src',`http://openweathermap.org/img/w/${iconId}.png`);
+        this.icon.setAttribute('src',`https://openweathermap.org/img/w/${iconId}.png`);
     }
 }
