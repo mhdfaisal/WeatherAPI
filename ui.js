@@ -4,17 +4,18 @@ class UI{
         this.icon = document.querySelector('.icon');
     }
 
-    //to Format dates
-    formatDate(date){
-        const d = new Date(date);
-        return d.toUTCString();
+    //To get current date
+    getDate(date){
+        let today = new Date(date).toUTCString();
+        return today;
     }
+   
     //To paint the UI
     paint(weather){
         //Array to hold the data to be populated
         const weatherArray = [`${weather.name}, 
             ${weather.sys.country}`,
-            this.formatDate(weather.dt), 
+             this.getDate(Date.now()), 
             `${weather.weather[0].main} - ${weather.weather[0].description}`,
             `${weather.main.temp} C`,
             `${weather.main.humidity}%`,
