@@ -17,7 +17,7 @@ class UI{
             ${weather.sys.country}`,
              this.getDate(Date.now()), 
             `${weather.weather[0].main} - ${weather.weather[0].description}`,
-            `${weather.main.temp} C`,
+            `${weather.main.temp} <small><sup>C</sup></small>`,
             `${weather.main.humidity}%`,
             `${weather.wind.speed} m/s`,
             `${weather.main.pressure} hPa`];
