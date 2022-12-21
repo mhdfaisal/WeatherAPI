@@ -1,6 +1,6 @@
 class Weather{
     constructor(){
-        this.app_id = '777fdc96dace7f6c8bf1dff9d5a5497c';
+        this.app_id = '';
     }
 
     //Function to get weather data
